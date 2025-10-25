@@ -3,6 +3,33 @@
 function sayHello() {
     alert("Hello, world from javascript!");
 }
+
+// This function checks the strength of a password based on length, capitalization, etc.
+// It returns a boolean with true for a strong password and false for a weak password
+function isStrongPassword(password) {
+    const upperCaseCheck = /[A-Z]/.test(password);
+    if (password.length >= 8 && !(password.includes("assword")) && upperCaseCheck) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//This function displays the results of the password test as an alert
+function displayResults(result) {
+    if (result == true) {
+        alert("Password is strong!");
+    }
+    else {
+        alert("Password is weak!");
+    }
+}
+//This function is used to call the password check and results display when the button is clicked
+function checkPassword() {
+    const password = document.getElementById("password").value;
+    const result = isStrongPassword(password);
+    displayResults(result);
+}
+
 // This function will be called when the link is clicked
 // It shows an alert with a message
 // Ensure the DOM is fully loaded before attaching the event listener

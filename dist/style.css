@@ -2,7 +2,43 @@ h1{
   border-color: #d3e644;
   border-style: dashed;
 }
+body {
+  background-color: #eeeeee;
+}
 
+.inputSpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px gray solid;
+  border-radius: 8px;
+  width: 300px;
+}
+h2 {
+  color: gray;
+}
+input, button {
+  border: 1px gray solid;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: rgb(99, 99, 99);
+}
+.logButton {
+  margin-top: 24px;
+  margin-bottom: 75px;
+  padding-left: 80px;
+  padding-right: 80px;
+  
+}
+.logButton:hover {
+  background-color: #888888;
+  color: white;
+}
 table {
   border-collapse: collapse;
   width: 100%;
